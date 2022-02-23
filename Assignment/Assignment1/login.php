@@ -12,7 +12,7 @@ $password=md5($password);
 
 $con=mysqli_connect($host,$dbuser,$dbpass,$db);
 
-$result=mysqli_query($con,'select * from login_user where email="'.$name.'" and password="'.$password.'"');
+$result=mysqli_query($con,'select * from login_user where name="'.$name.'" and password="'.$password.'"');
 
 if(mysqli_num_rows($result)>0){
 
